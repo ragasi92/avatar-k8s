@@ -16,9 +16,7 @@ spec:
       - name: frontend
         env:
           - name: VITE_CLIENT_PORT
-            value: "5173"
-          - name: VITE_PORT
-            value: "5173"
+            value: "80"
         image: ragasi1992/avatar-frontend-devops:latest
         ports:
           - name: http
@@ -59,7 +57,7 @@ spec:
   - protocol: TCP
     port: 5173
     targetPort: 5173
-  type: LoadBalancer
+  type: ClusterIP
 
 
 
