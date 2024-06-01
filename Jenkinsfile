@@ -17,7 +17,7 @@ node {
                     sh "cat avatar.yaml"
                     sh "git add ."
                     sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
-                   // sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/avatar-k8s.git HEAD:main"
+                    sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/avatar-k8s.git HEAD:main"
             }
         }
     }
