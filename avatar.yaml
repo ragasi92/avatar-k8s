@@ -40,7 +40,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: ragasi1992/avatar-backend-devops:61
+        image: ragasi1992/avatar-backend-devops:latest
         ports:
           - name: http
             containerPort: 5000
