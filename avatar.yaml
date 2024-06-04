@@ -17,7 +17,7 @@ spec:
         env:
           - name: VITE_CLIENT_PORT
             value: "80"
-        image: ragasi1992/avatar-frontend-devops:7
+        image: ragasi1992/avatar-frontend-devops:8
         ports:
           - name: http
             containerPort: 5173
@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: ragasi1992/avatar-backend-devops:7
+        image: ragasi1992/avatar-backend-devops:8
         ports:
           - name: http
             containerPort: 5000
